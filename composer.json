@@ -1,0 +1,20 @@
+{
+    "name" : "zedisdog/yii2-array2xml",
+    "type" : "yii-extension",
+    "description" : "convert array to xml",
+    "authors" : [
+        {
+            "name": "zed",
+            "email": "2692273254@qq.com"
+        }
+    ],
+    "require" : {
+        "yiisoft/yii2": ">=2.0.6"
+    },
+    "time" : "2015-12-14",
+    "autoload" : {
+        "psr-0" : {
+            "zedisdog\\Yii2ArrayToXML" : "src/"
+        }
+    }
+}
