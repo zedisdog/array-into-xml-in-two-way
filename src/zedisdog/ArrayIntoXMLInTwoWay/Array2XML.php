@@ -1,5 +1,5 @@
 <?php
-namespace zedisdog\Yii2ArrayIntoXMLInTwoWay;
+namespace zedisdog\ArrayIntoXMLInTwoWay;
 /**
  * Array2XML: A class to convert array in PHP to XML
  * It also takes into account attributes names unlike SimpleXML in PHP
