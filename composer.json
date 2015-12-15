@@ -1,7 +1,7 @@
 {
-    "name" : "zedisdog/yii2-array-into-xml-in-two-way",
-    "type" : "yii-extension",
-    "description" : "convert array to xml",
+    "name" : "zedisdog/array-into-xml-in-two-way",
+    "type" : "lib",
+    "description" : "array into xml in two way",
     "authors" : [
         {
             "name": "zed",
@@ -9,12 +9,12 @@
         }
     ],
     "require" : {
-        "yiisoft/yii2": ">=2.0.6"
+        "php": ">=5.4"
     },
     "time" : "2015-12-14",
     "autoload" : {
         "psr-0" : {
-            "zedisdog\\Yii2ArrayIntoXMLInTwoWay" : "src/"
+            "zedisdog\\ArrayIntoXMLInTwoWay" : "src/"
         }
     }
 }
