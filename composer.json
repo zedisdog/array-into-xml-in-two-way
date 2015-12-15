@@ -1,5 +1,5 @@
 {
-    "name" : "zedisdog/yii2-array-into-XML-in-two-way",
+    "name" : "zedisdog/yii2-array-into-xml-in-two-way",
     "type" : "yii-extension",
     "description" : "convert array to xml",
     "authors" : [
