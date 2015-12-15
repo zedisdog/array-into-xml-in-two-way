@@ -3,6 +3,14 @@
 ##说明
 这是从[lalit.lab](http://www.lalit.org/)上面拿到的array2xml和xml2array类。
 
+## 使用前的准备
+
+在 composer.json 文件中申明依赖：
+
+```json
+"zedisdog/array-into-xml-in-two-way": "~0.1"
+```
+
 ##上手
 
 ###array2xml
@@ -29,3 +37,6 @@ print_r($array);
 ```
 Important thing to note is that the $array returned can be converted back to XML using the Array2XML class.
 
+## 致谢
+
+- [lalit.lab](http://www.lalit.org/)
