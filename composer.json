@@ -14,7 +14,7 @@
     "time" : "2015-12-14",
     "autoload" : {
         "psr-0" : {
-            "zedisdog\\Yii2ArrayToXML" : "src/"
+            "zedisdog\\Yii2ArrayIntoXMLInTwoWay" : "src/"
         }
     }
 }
