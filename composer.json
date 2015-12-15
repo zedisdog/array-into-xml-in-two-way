@@ -16,5 +16,6 @@
         "psr-0" : {
             "zedisdog\\ArrayIntoXMLInTwoWay" : "src/"
         }
-    }
+    },
+    "license": "Apache License 2.0"
 }
