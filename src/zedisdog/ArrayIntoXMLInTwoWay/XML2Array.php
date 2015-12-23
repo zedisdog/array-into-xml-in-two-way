@@ -1,5 +1,8 @@
 <?php
 namespace zedisdog\ArrayIntoXMLInTwoWay;
+use DOMDocument;
+use Exception;
+
 /**
  * XML2Array: A class to convert XML to array in PHP
  * It returns the array which can be converted back to XML using the Array2XML script
