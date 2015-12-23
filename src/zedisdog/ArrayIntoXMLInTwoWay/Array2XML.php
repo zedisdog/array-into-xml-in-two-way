@@ -120,6 +120,15 @@ class Array2XML
         return $node;
     }
 
+    /**
+     * 返回xml字符串
+     * @return string
+     */
+    public function getXML()
+    {
+        return $this->xml->saveXML();
+    }
+
     /*
      * Get string representation of boolean value
      */
