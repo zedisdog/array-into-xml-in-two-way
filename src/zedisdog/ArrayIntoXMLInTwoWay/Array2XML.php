@@ -26,6 +26,7 @@ class Array2XML
             $rootAttribute = $this->xml->createAttribute('id');
             $rootAttribute->value = 'root';
             $root->appendChild($rootAttribute);
+            $root->setIdAttribute('id',true);
             $this->xml->appendChild($root);
         }
     }
@@ -34,10 +35,10 @@ class Array2XML
      * add node into specially node or root
      * @param string $node_name
      * @param array $arr
-     * @param null $parentId
+     * @param null|string $parentId
      * @throws Exception
      */
-    public function addNode($node_name, $arr, $parentId=null)
+    public function addNode($node_name, $arr, $parentId='root')
     {
         if($parentId){
             $oldParent = $this->xml->getElementById($parentId);
