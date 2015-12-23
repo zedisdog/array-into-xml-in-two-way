@@ -2,6 +2,8 @@
 
 ##说明
 这是从[lalit.lab](http://www.lalit.org/)上面拿到的array2xml和xml2array类。
+- [array2xml](http://www.lalit.org/lab/convert-php-array-to-xml-with-attributes/)
+- [xml2array](http://www.lalit.org/lab/convert-xml-to-array-in-php-xml2array/)
 
 ## 使用前的准备
 
