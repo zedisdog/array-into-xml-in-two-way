@@ -1,7 +1,8 @@
 #array into XML in two-way
 
 ##说明
-这是从[lalit.lab](http://www.lalit.org/)上面拿到的array2xml和xml2array类。
+这是从[lalit.lab](http://www.lalit.org/)上面拿到的array2xml和xml2array类。后来发现array2xml并没有满足我的要求。我就自己改了一下。现在array2xml通过实例化对象来使用。使用addNode方法可以随时添加节点。目前可能还不太灵活，有时间了继续优化它吧。
+##原地址
 - [array2xml](http://www.lalit.org/lab/convert-php-array-to-xml-with-attributes/)
 - [xml2array](http://www.lalit.org/lab/convert-xml-to-array-in-php-xml2array/)
 
@@ -16,20 +17,13 @@
 ##上手
 
 ###array2xml
-The usage is pretty simple. You have to include the class file in your code and call the following function.
-
+注意：用法跟原来的不一样了。
+实例化对象之后，将自动生成一个id属性为root的根节点。之后有空了，我会是它可以容易的添加id属性，以此来方便插入节点到指定的节点中。
 ```php
-$xml = Array2XML::createXML('root_node_name', $php_array);
+$xml = new Array2XML('root_node_name', $version /*='1.0'*/, $encoding /*='utf-8'*/);
+$xml->addNode($node_name,$arr,$parentId/*='root'*/);
 echo $xml->saveXML();
 ```
-Important thing to note is that the $xml object returned is of type DOMDocument and hence you can perform further operations on it.
-
-Optionally you can also set the version of XML and encoding by calling the Array2XML::init() function before calling the Array2XML::createXML() function.
-
-```php
-Array2XML::init($version /* ='1.0' */, $encoding /* ='UTF-8' */);
-```
-It throws exception if the tag name or attribute name has illegal chars as per W3C spec.
 
 ###xml2array
 The usage is pretty simple. You have to include the class file in your code and call the following function.
