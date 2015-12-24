@@ -11,7 +11,7 @@
 在 composer.json 文件中申明依赖：
 
 ```json
-"zedisdog/array-into-xml-in-two-way": "~0.1"
+"zedisdog/array-into-xml-in-two-way": "~0.5.0"
 ```
 
 ##上手
