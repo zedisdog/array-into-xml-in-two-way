@@ -89,7 +89,7 @@ class Array2XML
     /**
      * Convert an Array to XML
      * @param string $node_name - name of the root node to be converted
-     * @param array $arr - aray to be converterd
+     * @param mixed $arr - aray to be converterd
      * @return \DOMNode
      * @throws Exception
      */
@@ -151,7 +151,11 @@ class Array2XML
         // after we are done with all the keys in the array (if it is one)
         // we check if it has any text value, if yes, append it.
         if(!is_array($arr)) {
-            $node->appendChild($this->xml->createTextNode($this->bool2str($arr)));
+            if($arr != strip_tags($arr)){
+                $node->appendChild($this->xml->createCDATASection($arr));
+            }else{
+                $node->appendChild($this->xml->createTextNode($this->bool2str($arr)));
+            }
         }
 
         return $node;
