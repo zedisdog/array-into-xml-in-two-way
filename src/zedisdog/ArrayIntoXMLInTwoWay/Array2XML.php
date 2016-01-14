@@ -131,7 +131,11 @@ class Array2XML
             // recurse to get the node for that key
             foreach($arr as $key=>$value){
                 if(!$this->isValidTagName($key)) {
-                    throw new Exception('[Array2XML] Illegal character in tag name. tag: '.$key.' in node: '.$node_name);
+                    if(is_integer($key)){
+                        $key = 'item';
+                    }else{
+                        throw new Exception('[Array2XML] Illegal character in tag name. tag: '.$key.' in node: '.$node_name);
+                    }
                 }
                 if(is_array($value) && is_numeric(key($value))) {
                     // MORE THAN ONE NODE OF ITS KIND;
